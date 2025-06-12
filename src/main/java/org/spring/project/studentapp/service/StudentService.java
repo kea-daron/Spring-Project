@@ -5,7 +5,6 @@ import org.spring.project.studentapp.model.Student;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class StudentService {
@@ -34,7 +33,7 @@ public class StudentService {
     public boolean updateStudentById(int id, Student updatedStudent) {
         for (int i = 0; i < students.size(); i++) {
             if (students.get(i).getId() == id) {
-                updatedStudent.setId(id); // preserve original ID
+                updatedStudent.setId(id);
                 students.set(i, updatedStudent);
                 return true;
             }
