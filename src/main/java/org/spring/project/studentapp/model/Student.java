@@ -14,4 +14,3 @@ public class Student {
     private String gender;
     private double score;
 }
-

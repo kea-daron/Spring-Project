@@ -16,12 +16,12 @@ public class StudentService {
         this.students = students;
     }
 
-    public void insertStudent(Student student) {
-        students.add(student);
-    }
-
     public List<Student> getAllStudents() {
         return students;
+    }
+
+    public void insertStudent(Student student) {
+        students.add(student);
     }
 
     public Student getStudentById(int id) {
